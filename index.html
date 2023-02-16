@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Cdn Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- !!!!Agregaar icono a la pag¡¡¡¡  -->
+    <title>Portfolio</title>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/AC/</h1>
+                    <nav id="nav">
+                        <ul id="link">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                    </nav>
+                    <!-- ICONOS === responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <!-- Iconos redes sociales -->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Alfonso Contreras</span><hr> Desarrollador FullStack</h2>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus neque asperiores cupiditate ipsum rerum recusandae repudiandae ab totam praesentium commodi blanditiis, porro consequatur qui quis quas doloribus nisi adipisci. Eius?</p>
+                <a href="#proyectos">Ir a Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section sobre mi  -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./img/yo.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola Soy, <span>Alfonso Contreras</span></h2>
+            <h3>Desarrollador</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet maiores quidem, quas.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis debitis necessitatibus dolor ullam??</p>
+            <a href="#">Descarga mi CV</a>
+        </div>
+    </section>
+
+    <!-- Seccion Servicios -->
+    <!-- La vamos a dejar editada -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Mis Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphics</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphics</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphics</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Seccion Habllidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>Habilidades</h3>
+
+        <div class="skill">
+            <div class="info">
+                <p class=""><span class="lista"></span>HTML5 & CSS3</p>
+                <div class="porcentaje">70%</div>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <div class="porcentaje">45%</div>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <div class="porcentaje">60%</div>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Python</p>
+                <div class="porcentaje">50%</div>
+            </div>
+            <div class="barra">
+                <div id="py" class="barra-progreso4"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Mongo DB</p>
+                <div class="porcentaje">30%</div>
+            </div>
+            <div class="barra">
+                <div id="Mongo" class="barra-progreso5"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>PHP</p>
+                <div class="porcentaje">45%</div>
+            </div>
+            <div class="barra">
+                <div id="php" class="barra-progreso6"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Django</p>
+                <div class="porcentaje">40%</div>
+            </div>
+            <div class="barra">
+                <div id="dj" class="barra-progreso7"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Git</p>
+                <div class="porcentaje">40%</div>
+            </div>
+            <div class="barra">
+                <div id="gt" class="barra-progreso8"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>NodeJs</p>
+                <div class="porcentaje">20%</div>
+            </div>
+            <div class="barra">
+                <div id="node" class="barra-progreso9"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>React</p>
+                <div class="porcentaje">25%</div>
+            </div>
+            <div class="barra">
+                <div id="react" class="barra-progreso10"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Seccion Proyectos -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/data1.png" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto </h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <button class="button type3">Ir Al proyecto</button>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/data1.png" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <button class="button type3">Ir Al proyecto</button>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./img/data1.png" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                    <a href="https://sunny-biscochitos-18880d.netlify.app/" target="_blank"></a>
+                </div>
+            </div>
+            
+            <!-- <button type="submit" class="button type3">Ir Al proyecto</button> -->
+        </div>
+    </section>
+
+    <!-- Seccion Contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame Ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Todos los derechos reservados --  Orfheres 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>  
+    </footer>
+    <script src="js/App.js"></script>
+</body>
+</html>
