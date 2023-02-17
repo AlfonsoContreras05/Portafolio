@@ -75,7 +75,7 @@ html{
 }
 
 #inicio .contenido .presentacion{
-    min-width: 1100px;
+    /* min-width: 1100px; */
     height: 100vh;
     margin: auto;
     color: #fff;
@@ -229,7 +229,7 @@ html{
 #servicios .fila{
     display: flex;
     justify-content: space-between;
-    min-width: 1100px;
+    /* min-width: 1100px; */
     margin: 30px auto;
 }
 
@@ -719,10 +719,16 @@ footer a{
     }
     #servicios .fila{
         display: block;
+        
     }
     #servicios .fila .servicio{
         margin: 10px auto;
+        width: 95%;
     }
+    .serv {
+        width: 100%;
+    }
+      
     .contenedor-skills{
         padding: 50px 20px;
     }
@@ -749,5 +755,43 @@ footer a{
     }
 
 } 
+@media only screen and (max-width: 768px) {
+    .fila {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .servicio {
+      margin-bottom: 30px;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .icono {
+      font-size: 2.5rem;
+    }
+    .servicio h4 {
+      font-size: 1.8rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .servicio {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .servicio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .servicio ul {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  
+
+
 
 /* Estilos para pantallas de hasta 600px de ancho */
