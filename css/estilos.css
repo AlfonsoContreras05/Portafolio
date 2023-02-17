@@ -482,6 +482,7 @@ html{
     max-width: 1100px;
     padding: 100px 0;
     margin: auto;
+    
 }
 
 #portfolio .titulo-seccion{
@@ -666,7 +667,7 @@ footer a{
 
 /* RESPONSIVE */
 
-@media screen and (max-width:800px){
+ @media screen and (max-width:800px){
     .redes{
         display: none;
     }
@@ -714,7 +715,7 @@ footer a{
         text-align: center;
     }
     #servicios{
-        padding: 40px 15px;
+        padding: 40px 0px;
     }
     #servicios .fila{
         display: block;
@@ -747,4 +748,6 @@ footer a{
         margin-bottom: 15px;
     }
 
-}
+} 
+
+/* Estilos para pantallas de hasta 600px de ancho */

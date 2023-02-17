@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,9 +33,9 @@
                     </div>
                     <!-- Iconos redes sociales -->
                     <div class="redes">
-                        <a href="https://github.com/AlfonsoContreras05"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/alfonso-contreras-bb7521196/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://github.com/AlfonsoContreras05" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alfonso-contreras-bb7521196/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
                     </div>
                 </div>
             </header>
@@ -43,7 +43,7 @@
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Alfonso Contreras</span><hr> Desarrollador FullStack</h2>
                 <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus neque asperiores cupiditate ipsum rerum recusandae repudiandae ab totam praesentium commodi blanditiis, porro consequatur qui quis quas doloribus nisi adipisci. Eius?</p>
-                <a href="#proyectos">Ir a Proyectos</a>
+                <a href="#portfolio">Ir a Proyectos</a>
             </div>
 
         </div>
@@ -81,8 +81,8 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
             </div>
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de sitios Web</h4>
+                <span class="icono"><i class="fa-solid fa-shop"></i></span>
+                <h4>Creacion de tiendas virtuales</h4>
                 <hr>
                 <ul class="servicios-tag">
                     <li>Web</li>
@@ -92,8 +92,8 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
             </div>
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de sitios Web</h4>
+                <span class="icono"><i class="fa-regular fa-person-carry-box"></i></span>
+                <h4>Diseño de aplicaciones de inventario</h4>
                 <hr>
                 <ul class="servicios-tag">
                     <li>Web</li>
@@ -213,10 +213,10 @@
     </div>
 
     <!-- Seccion Proyectos -->
-    <section id="portfolio">
+    <section id="portfolio">  <!--//arizonaburger-->
         <h3 class="titulo-seccion">Mis Proyectos</h3>
         <div class="fila">
-            <div class="proyecto">
+            <div class="proyecto"> <!-- Arizona burger-->
                 <div class="overlay"></div>
                 <img src="/img/arizona.png" alt="">
                 <div class="info">
@@ -225,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto">  <!--//simuador de envio de email-->
                 <div class="overlay"></div>
                 <img src="/img/simulador-mail.png" alt="">
                 <div class="info">
@@ -234,7 +234,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto"> <!--//landing data1-->
                 <div class="overlay"></div>
                 <img src="./img/data1.png" alt="">
                 <div class="info">
@@ -242,8 +242,34 @@
                     <a class="Abrir" href="https://sunny-biscochitos-18880d.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
                 </div>
             </div>
-            
-            <!-- <button type="submit" class="button type3">Ir Al proyecto</button> -->
+        </div>
+        <div class="fila">
+            <div class="proyecto"> <!-- RestaOne-->
+                <div class="overlay"></div>
+                <img src="/img/restaOne.png" alt="">
+                <div class="info">
+                    <h4>Control de Restaurante</h4>
+                    <a class="Abrir" href="https://restaonev2.000webhostapp.com/Sistema_ecommerce_back/" target="_blank"><p>Ir al Proyecto</p></a>
+                </div>
+            </div>
+
+            <div class="proyecto"> <!-- Carrito sin localhost-->
+                <div class="overlay"></div>
+                <img src="/img/cart-sin-localhost.png" alt="">
+                <div class="info">
+                    <h4>Carrito simplet</h4>
+                    <a class="Abrir" href="https://timely-granita-18fd6e.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
+                </div>
+            </div>
+
+            <div class="proyecto"> <!-- -->
+                <div class="overlay"></div>
+                <img src="/img/restaOne.png" alt="">
+                <div class="info">
+                    <h4>Control de Restaurante</h4>
+                    <a class="Abrir" href="" target="_blank"><p>Ir al Proyecto</p></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -251,19 +277,48 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame Ahora</h3>
         <div class="contenedor-form">
-            <form action="enviar-formulario.php" method="post">
+            <form action="" method="post" id="formulario-contacto">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Email" class="input-mitad">
+                    <input type="text" id="nombre" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" id="email" placeholder="Email" class="input-mitad">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" id="tema" placeholder="Tema..." class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="input-full"></textarea>
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="input-full"></textarea>
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
+            <script>
+                const formulario = document.getElementById('formulario-contacto');
+            
+                formulario.addEventListener('submit', function(event) {
+                    event.preventDefault(); // previene el comportamiento por defecto del envío del formulario
+            
+                    // recoge los datos del formulario
+                    const nombre = document.getElementById('nombre').value;
+                    const email = document.getElementById('email').value;
+                    const tema = document.getElementById('tema').value;
+                    const mensaje = document.getElementById('mensaje').value;
+            
+                    // envía los datos del formulario a través de una solicitud HTTP POST utilizando XMLHttpRequest
+                    const xhr = new XMLHttpRequest();
+                    const url = 'enviar-formulario.php';
+                    const params = `nombre=${nombre}&email=${email}&tema=${tema}&mensaje=${mensaje}`;
+            
+                    xhr.open('POST', url, true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            
+                    xhr.onreadystatechange = function() {
+                        if (xhr.readyState === 4 && xhr.status === 200) {
+                            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+                        }
+                    };
+            
+                    xhr.send(params);
+                });
+            </script>
         </div>
     </section>
 
