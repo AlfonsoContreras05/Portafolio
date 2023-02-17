@@ -290,35 +290,6 @@
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
-            <script>
-                const formulario = document.getElementById('formulario-contacto');
-            
-                formulario.addEventListener('submit', function(event) {
-                    event.preventDefault(); // previene el comportamiento por defecto del envío del formulario
-            
-                    // recoge los datos del formulario
-                    const nombre = document.getElementById('nombre').value;
-                    const email = document.getElementById('email').value;
-                    const tema = document.getElementById('tema').value;
-                    const mensaje = document.getElementById('mensaje').value;
-            
-                    // envía los datos del formulario a través de una solicitud HTTP POST utilizando XMLHttpRequest
-                    const xhr = new XMLHttpRequest();
-                    const url = 'enviar-formulario.php';
-                    const params = `nombre=${nombre}&email=${email}&tema=${tema}&mensaje=${mensaje}`;
-            
-                    xhr.open('POST', url, true);
-                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            
-                    xhr.onreadystatechange = function() {
-                        if (xhr.readyState === 4 && xhr.status === 200) {
-                            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-                        }
-                    };
-            
-                    xhr.send(params);
-                });
-            </script>
         </div>
     </section>
 
