@@ -3,6 +3,7 @@ const menuButton=document.getElementById('icono-nav');
 const navLinks=document.querySelectorAll('#link a');
 const filterButtons=document.querySelectorAll('.filtro');
 const projectCards=document.querySelectorAll('.proyecto-card');
+const contactForm=document.getElementById('formulario-contacto');
 
 function closeMenu(){
   nav.classList.remove('responsive');
@@ -32,5 +33,19 @@ filterButtons.forEach(button=>{
     });
   });
 });
+
+if(contactForm){
+  contactForm.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    const nombre=document.getElementById('nombre').value.trim();
+    const email=document.getElementById('email').value.trim();
+    const tema=document.getElementById('tema').value.trim();
+    const mensaje=document.getElementById('mensaje').value.trim();
+    const destino=['alfonso.contreras.a3','gmail.com'].join('@');
+    const asunto=encodeURIComponent(`Contacto portafolio: ${tema}`);
+    const cuerpo=encodeURIComponent(`Hola Alfonso,\n\n${mensaje}\n\nNombre: ${nombre}\nCorreo: ${email}`);
+    window.location.href=`mailto:${destino}?subject=${asunto}&body=${cuerpo}`;
+  });
+}
 
 document.querySelectorAll('.seccion-observable').forEach(section=>section.classList.add('visible'));
