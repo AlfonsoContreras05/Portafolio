@@ -1,0 +1,13 @@
+{
+  "name": "portafolio-alfonso-contreras",
+  "version": "2.0.0",
+  "description": "Portafolio profesional en HTML, CSS y JavaScript con capturas automáticas de proyectos.",
+  "private": true,
+  "scripts": {
+    "capturas": "node scripts/capturas-proyectos.js",
+    "capturas:install": "playwright install chromium"
+  },
+  "devDependencies": {
+    "playwright": "^1.45.0"
+  }
+}
