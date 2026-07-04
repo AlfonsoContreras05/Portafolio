@@ -48,7 +48,7 @@ function manejarFormulario(evento) {
         `Hola Alfonso,\n\n${mensaje}\n\nNombre: ${nombre}\nCorreo: ${email}`
     );
 
-    window.location.href = `mailto:victordiaz.pc@gmail.com?subject=${asunto}&body=${cuerpo}`;
+    window.location.href = `mailto:alfonso.contreras.a3@gmail.com?subject=${asunto}&body=${cuerpo}`;
 }
 
 function activarSeccionesVisibles() {
