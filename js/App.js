@@ -1,63 +1,90 @@
-//variables de entorno
+const nav = document.getElementById('nav');
+const menuButton = document.getElementById('icono-nav');
+const navLinks = document.querySelectorAll('#link a');
+const filterButtons = document.querySelectorAll('.filtro');
+const projectCards = document.querySelectorAll('.proyecto-card');
+const contactForm = document.getElementById('formulario-contacto');
+const observableSections = document.querySelectorAll('.seccion-observable');
 
-
-
-
-//declarativas
-
-
-
-
-
-//funciones
-//funcion que aplica estilos a la seleccion 
-function seleccionar(link){
-    let opciones = document.querySelectorAll('#link a');
-    opciones[0].className = '';
-    opciones[1].className = '';
-    opciones[2].className = '';
-    opciones[3].className = '';
-    opciones[4].className = '';
-    link.className = 'seleccionado';
-    //hacemos desaparecer el menu una vez que se a seleccionado
-    let x = document.getElementById('nav');
-    x.className = '';
+function cerrarMenu() {
+    nav.classList.remove('responsive');
+    menuButton.setAttribute('aria-expanded', 'false');
 }
 
-
-//funcion que muestra el menu responsivo
-function responsiveMenu(){
-    let x = document.getElementById('nav');
-    if(x.className === ""){
-        x.className = "responsive";
-    }else{
-        x.className = ""
-    }
+function seleccionarLink(linkSeleccionado) {
+    navLinks.forEach((link) => link.classList.remove('seleccionado'));
+    linkSeleccionado.classList.add('seleccionado');
 }
 
-
-
-
-
-//funcion que aplica la animacion 
-function efectoHabilidades(){
-    let skills = document.getElementById('skills');
-    let distanciaSkills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distanciaSkills >= 300){
-        document.getElementById('html').classList.add('barra-progreso1');
-        document.getElementById('js').classList.add('barra-progreso2');
-        document.getElementById('bd').classList.add('barra-progreso3');
-        document.getElementById('py').classList.add('barra-progreso4');
-        document.getElementById('Mongo').classList.add('barra-progreso5');
-        document.getElementById('php').classList.add('barra-progreso6');
-        document.getElementById('dj').classList.add('barra-progreso7');
-        document.getElementById('gt').classList.add('barra-progreso8');
-        document.getElementById('node').classList.add('barra-progreso9');
-        document.getElementById('react').classList.add('barra-progreso10');
-    }
+function responsiveMenu() {
+    nav.classList.toggle('responsive');
+    const menuAbierto = nav.classList.contains('responsive');
+    menuButton.setAttribute('aria-expanded', menuAbierto.toString());
 }
 
-//detectar scrolling para aplicar animacion
-window.onscroll = function (){
-    efectoHabilidades()
+function filtrarProyectos(categoria) {
+    projectCards.forEach((card) => {
+        const perteneceCategoria = card.dataset.category === categoria;
+        const mostrarTodos = categoria === 'todos';
+
+        if (mostrarTodos || perteneceCategoria) {
+            card.classList.remove('oculto');
+        } else {
+            card.classList.add('oculto');
+        }
+    });
 }
+
+function manejarFormulario(evento) {
+    evento.preventDefault();
+
+    const nombre = document.getElementById('nombre').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const tema = document.getElementById('tema').value.trim();
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    const asunto = encodeURIComponent(`Contacto portafolio: ${tema}`);
+    const cuerpo = encodeURIComponent(
+        `Hola Alfonso,\n\n${mensaje}\n\nNombre: ${nombre}\nCorreo: ${email}`
+    );
+
+    window.location.href = `mailto:victordiaz.pc@gmail.com?subject=${asunto}&body=${cuerpo}`;
+}
+
+function activarSeccionesVisibles() {
+    const observer = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+            if (entrada.isIntersecting) {
+                entrada.target.classList.add('visible');
+                observer.unobserve(entrada.target);
+            }
+        });
+    }, {
+        threshold: 0.16
+    });
+
+    observableSections.forEach((section) => observer.observe(section));
+}
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        seleccionarLink(link);
+        cerrarMenu();
+    });
+});
+
+filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach((btn) => btn.classList.remove('activo'));
+        button.classList.add('activo');
+        filtrarProyectos(button.dataset.filter);
+    });
+});
+
+menuButton.addEventListener('click', responsiveMenu);
+
+if (contactForm) {
+    contactForm.addEventListener('submit', manejarFormulario);
+}
+
+activarSeccionesVisibles();
