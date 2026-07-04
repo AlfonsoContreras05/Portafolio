@@ -3,416 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Alfonso Contreras, desarrollador Full Stack con foco en JavaScript, datos, automatización y soluciones web reales.">
+    <meta name="author" content="Alfonso Contreras">
 
-    <!-- Cdn Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/20I84E2Su3I+q1i0nS3QXnDx1jT8zJ2G0xNqjE1T5VhV7P+QF3Ag+PX6tQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/estilos.css">
 
-    <!-- !!!!Agregaar icono a la pag¡¡¡¡  -->
-    <title>Portfolio</title>
+    <title>Alfonso Contreras | Desarrollador Full Stack</title>
 </head>
 <body>
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>/AC/</h1>
-                    <nav id="nav">
-                        <ul id="link">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PROYECTOS</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-                    </nav>
-                    <!-- ICONOS === responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars-staggered"></i>
+    <header class="site-header" id="site-header">
+        <div class="header-contenido">
+            <a href="#inicio" class="logo" aria-label="Ir al inicio">/AC/</a>
+
+            <nav id="nav" class="nav-principal">
+                <ul id="link">
+                    <li><a href="#inicio" class="seleccionado">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#habilidades">Stack</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="redes header-redes" aria-label="Redes profesionales">
+                <a href="https://github.com/AlfonsoContreras05" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alfonso-contreras-bb7521196/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <button id="icono-nav" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero seccion-observable">
+            <div class="hero-contenido">
+                <p class="eyebrow">Desarrollo web · datos · automatización</p>
+                <h1>Hola, soy <span>Alfonso Contreras</span>.</h1>
+                <h2>Construyo soluciones reales con JavaScript, backend, bases de datos y criterio de negocio.</h2>
+                <p class="descripcion">
+                    Desarrollador Full Stack en formación continua, con experiencia creando sistemas, catálogos,
+                    paneles administrativos, automatizaciones y proyectos que nacen de problemas reales.
+                </p>
+                <div class="hero-acciones">
+                    <a class="btn btn-primario" href="#proyectos">Ver proyectos</a>
+                    <a class="btn btn-secundario" href="#contacto">Hablemos</a>
+                </div>
+                <div class="hero-metricas" aria-label="Resumen profesional">
+                    <article>
+                        <strong>Full Stack</strong>
+                        <span>JavaScript, React, Node, SQL</span>
+                    </article>
+                    <article>
+                        <strong>BI & Datos</strong>
+                        <span>Power BI, SQL, Excel, QA</span>
+                    </article>
+                    <article>
+                        <strong>Proyectos reales</strong>
+                        <span>Landing, ERP, catálogos, scraping</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="sobre-mi seccion seccion-observable">
+            <div class="contenedor-foto">
+                <img src="./img/yo.png" alt="Fotografía de Alfonso Contreras">
+            </div>
+            <div class="contenido-texto">
+                <p class="titulo-seccion">Sobre mí</p>
+                <h2>Desarrollador con mentalidad de producto, datos y mejora continua.</h2>
+                <p>
+                    Soy Alfonso Contreras, Ingeniero en Informática y desarrollador orientado a crear soluciones
+                    útiles: sistemas internos, paneles administrativos, catálogos comerciales, automatizaciones y
+                    herramientas que ayuden a tomar mejores decisiones.
+                </p>
+                <p>
+                    Mi camino mezcla desarrollo web, análisis de datos, soporte a procesos y emprendimiento. Esa
+                    combinación me permite entender no solo el código, sino también el problema detrás del código.
+                </p>
+                <div class="pilares">
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>SQL</span>
+                    <span>Supabase</span>
+                    <span>Power BI</span>
+                </div>
+                <a class="btn btn-primario" href="#contacto">Contactarme</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios seccion seccion-observable">
+            <div class="encabezado-seccion">
+                <p class="titulo-seccion">Servicios</p>
+                <h2>Lo que puedo construir y mejorar</h2>
+                <p>Soluciones aterrizadas para negocios, operaciones y proyectos digitales.</p>
+            </div>
+
+            <div class="grid-servicios">
+                <article class="card-servicio">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h3>Desarrollo web</h3>
+                    <p>Landing pages, catálogos, sitios responsivos, formularios, paneles simples y experiencias orientadas a conversión.</p>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>React y Vite</li>
+                        <li>Deploy en Netlify</li>
+                    </ul>
+                </article>
+
+                <article class="card-servicio">
+                    <span class="icono"><i class="fa-solid fa-database"></i></span>
+                    <h3>Sistemas y datos</h3>
+                    <p>Aplicaciones con CRUD, control de inventario, reportes, validación de datos y conexiones con bases de datos.</p>
+                    <ul>
+                        <li>SQL y Supabase</li>
+                        <li>Dashboards y reportes</li>
+                        <li>Automatización de procesos</li>
+                    </ul>
+                </article>
+
+                <article class="card-servicio">
+                    <span class="icono"><i class="fa-solid fa-rocket"></i></span>
+                    <h3>Productos digitales</h3>
+                    <p>Proyectos pensados desde la necesidad real: idea, estructura, interfaz, flujo de usuario y mejora por iteraciones.</p>
+                    <ul>
+                        <li>Catálogos comerciales</li>
+                        <li>ERP liviano</li>
+                        <li>Herramientas internas</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia" class="experiencia seccion seccion-observable">
+            <div class="encabezado-seccion">
+                <p class="titulo-seccion">Perfil</p>
+                <h2>Un perfil híbrido: desarrollo, datos y operación</h2>
+            </div>
+
+            <div class="timeline">
+                <article>
+                    <span>01</span>
+                    <div>
+                        <h3>Desarrollo Full Stack</h3>
+                        <p>Construcción de interfaces, lógica de negocio, consumo de APIs, autenticación, CRUD y despliegues.</p>
                     </div>
-                    <!-- Iconos redes sociales -->
-                    <div class="redes">
-                        <a href="https://github.com/AlfonsoContreras05" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/alfonso-contreras-bb7521196/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </article>
+                <article>
+                    <span>02</span>
+                    <div>
+                        <h3>Datos y reporting</h3>
+                        <p>Trabajo con SQL, Excel avanzado, validación de información, reportes operativos y tableros BI.</p>
                     </div>
+                </article>
+                <article>
+                    <span>03</span>
+                    <div>
+                        <h3>Negocio y producto</h3>
+                        <p>Experiencia entendiendo requerimientos, procesos internos y necesidades comerciales antes de programar.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="habilidades seccion-observable">
+            <div class="contenedor-habilidades">
+                <div class="encabezado-seccion invertido">
+                    <p class="titulo-seccion">Stack técnico</p>
+                    <h2>Tecnologías que uso para resolver problemas</h2>
+                    <p>Más que porcentajes, este bloque muestra áreas de trabajo reales.</p>
                 </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>Alfonso Contreras</span><hr> Desarrollador FullStack</h2>
-                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus neque asperiores cupiditate ipsum rerum recusandae repudiandae ab totam praesentium commodi blanditiis, porro consequatur qui quis quas doloribus nisi adipisci. Eius?</p>
-                <a href="#portfolio">Ir a Proyectos</a>
-            </div>
 
-        </div>
-    </section>
-
-    <!-- section sobre mi  -->
-    <section id="sobremi">
-        <div class="contenedor-foto">
-            <img src="./img/yo.png" alt="">
-        </div>
-        <div class="sobremi">
-            <p class="titulo-seccion">Sobre mi</p>
-            <h2>Hola Soy, <span>Alfonso Contreras</span></h2>
-            <h3>Desarrollador</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet maiores quidem, quas.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quis debitis necessitatibus dolor ullam??</p>
-            <a href="#">Descarga mi CV</a>
-        </div>
-    </section>
-
-    <!-- Seccion Servicios -->
-    <!-- La vamos a dejar editada -->
-    <section id="servicios" class="serv">
-        <h3 class="titulo-seccion">Mis Servicios</h3>
-        <div class="fila">
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de sitios Web</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphics</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-shop"></i></span>
-                <h4>Creacion de tiendas virtuales</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphics</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-warehouse"></i></span>
-                <h4>Diseño de aplicaciones de inventario</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphics</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda expedita ex, nemo repudiandae ducimus accusantium id sequi</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Seccion Habllidades -->
-    <div class="contenedor-skills" id="skills">
-        <h3>Habilidades</h3>
-
-        <div class="skill">
-            <div class="info">
-                <p class=""><span class="lista"></span>HTML5 & CSS3</p>
-                <div class="porcentaje">70%</div>
-            </div>
-            <div class="barra">
-                <div id="html" class="barra-progreso1"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>JavaScript</p>
-                <div class="porcentaje">45%</div>
-            </div>
-            <div class="barra">
-                <div id="js" class="barra-progreso2"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>Base de Datos</p>
-                <div class="porcentaje">60%</div>
-            </div>
-            <div class="barra">
-                <div id="bd" class="barra-progreso3"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>Python</p>
-                <div class="porcentaje">50%</div>
-            </div>
-            <div class="barra">
-                <div id="py" class="barra-progreso4"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>Mongo DB</p>
-                <div class="porcentaje">30%</div>
-            </div>
-            <div class="barra">
-                <div id="Mongo" class="barra-progreso5"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>PHP</p>
-                <div class="porcentaje">45%</div>
-            </div>
-            <div class="barra">
-                <div id="php" class="barra-progreso6"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>Django</p>
-                <div class="porcentaje">40%</div>
-            </div>
-            <div class="barra">
-                <div id="dj" class="barra-progreso7"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>Git</p>
-                <div class="porcentaje">40%</div>
-            </div>
-            <div class="barra">
-                <div id="gt" class="barra-progreso8"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>NodeJs</p>
-                <div class="porcentaje">20%</div>
-            </div>
-            <div class="barra">
-                <div id="node" class="barra-progreso9"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="info">
-                <p><span class="lista"></span>React</p>
-                <div class="porcentaje">25%</div>
-            </div>
-            <div class="barra">
-                <div id="react" class="barra-progreso10"></div>
-            </div>
-        </div>
-        
-    </div>
-
-    <!-- Seccion Proyectos sitios-->
-    <section id="portfolio">  <!--//arizonaburger-->
-        <h3 class="titulo-seccion">Sitios</h3>
-        <div class="fila">
-            <div class="proyecto"> <!-- Arizona burger-->
-                <div class="overlay"></div>
-                <img src="/img/arizona.png" alt="">
-                <div class="info">
-                    <h4>Landing Page</h4>
-                    <a class="Abrir" href="https://shimmering-empanada-b9500e.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Frontend</h3>
+                        <p>HTML, CSS, JavaScript, React, Vite, responsive design.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Backend</h3>
+                        <p>Node.js, Express, PHP, APIs REST, autenticación y lógica de negocio.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Bases de datos</h3>
+                        <p>SQL, MySQL, PostgreSQL, Supabase, MongoDB y modelado básico.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Datos & BI</h3>
+                        <p>Power BI, Excel avanzado, validación, auditoría y reportes.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Automatización</h3>
+                        <p>Scraping, consumo de APIs, tareas repetitivas y flujos internos.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Herramientas</h3>
+                        <p>Git, GitHub, Netlify, cPanel, VS Code y documentación técnica.</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="proyecto"> <!--//landing data1-->
-                <div class="overlay"></div>
-                <img src="./img/data1.png" alt="">
-                <div class="info">
-                    <h4>Landing Page</h4>
-                    <a class="Abrir" href="https://sunny-biscochitos-18880d.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-            <div class="proyecto"> <!-- RestaOne-->
-                <div class="overlay"></div>
-                <img src="/img/restaOne.png" alt="">
-                <div class="info">
-                    <h4>Control de Restaurante</h4>
-                    <a class="Abrir" href="https://restaonev2.000webhostapp.com/Sistema_ecommerce_back/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto"> <!-- Arizona burger-->
-                <div class="overlay"></div>
-                <img src="/img/INFINITE.jpg" alt="">
-                <div class="info">
-                    <h4>Catalogo y Landing Tienda SexShop</h4>
-                    <a class="Abrir" href="https://sexshopcatalogo.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
+        <section id="proyectos" class="proyectos seccion seccion-observable">
+            <div class="encabezado-seccion">
+                <p class="titulo-seccion">Proyectos</p>
+                <h2>Trabajo real, práctica aplicada y evolución constante</h2>
+                <p>Una selección de sistemas, landing pages, catálogos y ejercicios que muestran crecimiento técnico.</p>
             </div>
 
-            <div class="proyecto"> 
-                <div class="overlay"></div>
-                <img src="./img/construccion.png" alt="">
-                <div class="info">
-                    <h4>Landing Page</h4>
-                    <a class="Abrir" href="#" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-            <div class="proyecto"> 
-                <div class="overlay"></div>
-                <img src="/img/construccion.png" alt="">
-                <div class="info">
-                    <h4>Control de Restaurante</h4>
-                    <a class="Abrir" href="#" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio"> <!--Seccion de proyectos javascript html y css-->
-        <h3 class="titulo-seccion">Proyectos Javascript</h3>
-        <div class="fila">
-            <div class="proyecto">  <!--//simuador de envio de email-->
-                <div class="overlay"></div>
-                <img src="/img/simulador-mail.png" alt="">
-                <div class="info">
-                    <h4>Simulador de envio de Mail</h4>
-                    <a class="Abrir" href="https://merry-nougat-863f6a.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-            <div class="proyecto"> <!--Calculadora de gastos -->
-                <div class="overlay"></div>
-                <img src="/img/gastos-calculadora.png" alt="">
-                <div class="info">
-                    <h4>Calculadora de gastos</h4>
-                    <a class="Abrir" href="https://eloquent-donut-eb1fbc.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-            <div class="proyecto"> <!--Simulador de Seguros -->
-                <div class="overlay"></div>
-                <img src="/img/seguros.png" alt="">
-                <div class="info">
-                    <h4>cotizador de seguros</h4>
-                    <a class="Abrir" href="https://scintillating-gingersnap-2b479c.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto"> <!-- simulador de tweets-->
-                <div class="overlay"></div>
-                <img src="/img/tweets.png" alt="">
-                <div class="info">
-                    <h4>Simulador de tweets en LS</h4>
-                    <a class="Abrir" href="https://gleeful-kashata-88e15f.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-            <div class="proyecto"> <!-- Carrito sin localhost-->
-                <div class="overlay"></div>
-                <img src="/img/cart-sin-localhost.png" alt="">
-                <div class="info">
-                    <h4>Carrito simple</h4>
-                    <a class="Abrir" href="https://timely-granita-18fd6e.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
+            <div class="filtros-proyectos" aria-label="Filtros de proyectos">
+                <button class="filtro activo" data-filter="todos">Todos</button>
+                <button class="filtro" data-filter="producto">Producto</button>
+                <button class="filtro" data-filter="web">Web</button>
+                <button class="filtro" data-filter="js">JavaScript</button>
+                <button class="filtro" data-filter="react">React</button>
             </div>
 
-            <div class="proyecto"> <!-- buscador de autos -->
-                <div class="overlay"></div>
-                <img src="/img/buscador.png" alt="">
-                <div class="info">
-                    <h4>Filtro basico con js</h4>
-                    <a class="Abrir" href="https://rainbow-kataifi-c57a00.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
+            <div class="grid-proyectos">
+                <article class="proyecto-card" data-category="producto">
+                    <img src="./img/construccion.png" alt="Vista preliminar de WizzardTech">
+                    <div class="proyecto-contenido">
+                        <span class="tag">ERP liviano</span>
+                        <h3>WizzardTech</h3>
+                        <p>Sistema de gestión con cotizaciones, clientes, lógica comercial y conexión a base de datos.</p>
+                        <div class="stack"><span>React</span><span>Node</span><span>Supabase</span></div>
+                    </div>
+                </article>
+
+                <article class="proyecto-card" data-category="producto">
+                    <img src="./img/construccion.png" alt="Vista preliminar de ARGOS">
+                    <div class="proyecto-contenido">
+                        <span class="tag">Sistema interno</span>
+                        <h3>ARGOS</h3>
+                        <p>Control de llaves, inventario, arqueos, rutas, historial y validación operativa.</p>
+                        <div class="stack"><span>PHP</span><span>MySQL</span><span>JS</span></div>
+                    </div>
+                </article>
+
+                <article class="proyecto-card" data-category="web">
+                    <img src="./img/data1.png" alt="Landing DataUno">
+                    <div class="proyecto-contenido">
+                        <span class="tag">Cliente</span>
+                        <h3>DataUno</h3>
+                        <p>Landing comercial para servicio técnico y soluciones digitales, con enfoque en conversión por WhatsApp.</p>
+                        <div class="stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    </div>
+                </article>
+
+                <article class="proyecto-card" data-category="web">
+                    <img src="./img/construccion.png" alt="Catálogo Essential Decant">
+                    <div class="proyecto-contenido">
+                        <span class="tag">Catálogo</span>
+                        <h3>Essential Decant</h3>
+                        <p>Landing, catálogo, administrador de productos, carrito y envío de pedidos por WhatsApp.</p>
+                        <div class="stack"><span>JS</span><span>Supabase</span><span>Netlify</span></div>
+                    </div>
+                </article>
+
+                <article class="proyecto-card" data-category="web">
+                    <img src="./img/arizona.png" alt="Landing Arizona Burger">
+                    <div class="proyecto-contenido">
+                        <span class="tag">Landing</span>
+                        <h3>Arizona Burger</h3>
+                        <p>Landing page enfocada en presentación visual, estructura comercial y publicación web.</p>
+                        <div class="stack"><span>HTML</span><span>CSS</span><span>Netlify</span></div>
+                        <a href="https://shimmering-empanada-b9500e.netlify.app/" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card" data-category="react">
+                    <img src="./img/VeterinariaR.png" alt="Proyecto React citas veterinarias">
+                    <div class="proyecto-contenido">
+                        <span class="tag">React</span>
+                        <h3>Citas Veterinarias</h3>
+                        <p>Aplicación React para administrar pacientes, formularios, estados y renderizado dinámico.</p>
+                        <div class="stack"><span>React</span><span>Vite</span><span>CSS</span></div>
+                        <a href="https://aesthetic-druid-986032.netlify.app" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card" data-category="js">
+                    <img src="./img/adm-pacientes.png" alt="Simulador de citas médicas">
+                    <div class="proyecto-contenido">
+                        <span class="tag">JavaScript</span>
+                        <h3>Administrador de citas</h3>
+                        <p>CRUD en JavaScript para practicar objetos, eventos, formularios y almacenamiento.</p>
+                        <div class="stack"><span>JS</span><span>DOM</span><span>LocalStorage</span></div>
+                        <a href="https://lambent-treacle-791eb6.netlify.app/" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                    </div>
+                </article>
+
+                <article class="proyecto-card" data-category="js">
+                    <img src="./img/gastos-calculadora.png" alt="Calculadora de gastos">
+                    <div class="proyecto-contenido">
+                        <span class="tag">JavaScript</span>
+                        <h3>Calculadora de gastos</h3>
+                        <p>Simulador para manejar presupuesto, eventos, validaciones y actualización dinámica del DOM.</p>
+                        <div class="stack"><span>JS</span><span>DOM</span><span>CSS</span></div>
+                        <a href="https://eloquent-donut-eb1fbc.netlify.app/" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                    </div>
+                </article>
             </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto"> <!-- Citas medicas-->
-                <div class="overlay"></div>
-                <img src="/img/adm-pacientes.png" alt="">
-                <div class="info">
-                    <h4>Simulador de Citas medicas</h4>
-                    <a class="Abrir" href="https://lambent-treacle-791eb6.netlify.app/" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-            <div class="proyecto"> <!-- -->
-                <div class="overlay"></div>
-                <img src="/img/construccion.png" alt="">
-                <div class="info">
-                    <h4>Proximamente</h4>
-                    <a class="Abrir" href="#" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
+        </section>
+
+        <section id="contacto" class="contacto seccion seccion-observable">
+            <div class="encabezado-seccion">
+                <p class="titulo-seccion">Contacto</p>
+                <h2>Conversemos sobre una oportunidad o proyecto</h2>
+                <p>Estoy disponible para proyectos, colaboración y oportunidades como desarrollador junior/full stack trainee.</p>
             </div>
 
-            <div class="proyecto"> <!-- buscador de autos -->
-                <div class="overlay"></div>
-                <img src="/img/construccion.png" alt="">
-                <div class="info">
-                    <h4>Proximamente</h4>
-                    <a class="Abrir" href="#" target="_blank"><p>Ir al Proyecto</p></a>
+            <div class="contacto-grid">
+                <div class="contacto-card">
+                    <h3>Canales</h3>
+                    <a href="https://github.com/AlfonsoContreras05" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/alfonso-contreras-bb7521196/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:victordiaz.pc@gmail.com"><i class="fa-solid fa-envelope"></i> victordiaz.pc@gmail.com</a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio"> <!--seccion de proyectos React-->
-        <h3 class="titulo-seccion">Proyectos React</h3>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="/img/VeterinariaR.png" alt="">
-                <div class="info">
-                    <h4>Citas Veterinarias</h4>
-                    <a class="Abrir" href="https://aesthetic-druid-986032.netlify.app" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
 
-                        <div class="proyecto"> <!-- buscador de autos -->
-                <div class="overlay"></div>
-                <img src="/img/construccion.png" alt="">
-                <div class="info">
-                    <h4>Proximamente</h4>
-                    <a class="Abrir" href="#" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
+                <form id="formulario-contacto" class="formulario-contacto">
+                    <div class="fila-form">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <input type="text" id="tema" name="tema" placeholder="Tema" required>
+                    <textarea id="mensaje" name="mensaje" rows="7" placeholder="Cuéntame brevemente qué necesitas" required></textarea>
+                    <button type="submit" class="btn btn-primario">Enviar mensaje</button>
+                    <p class="form-nota">El formulario abrirá tu correo para enviar el mensaje.</p>
+                </form>
             </div>
+        </section>
+    </main>
 
-                        <div class="proyecto"> <!-- buscador de autos -->
-                <div class="overlay"></div>
-                <img src="/img/construccion.png" alt="">
-                <div class="info">
-                    <h4>Proximamente</h4>
-                    <a class="Abrir" href="#" target="_blank"><p>Ir al Proyecto</p></a>
-                </div>
-            </div>
-    </section>
-
-    <!-- Seccion Contacto -->
-    <section id="contacto">
-        <h3 class="titulo-seccion">Contactame Ahora</h3>
-        <div class="contenedor-form">
-            <form action="" method="post" id="formulario-contacto">
-                <div class="fila mitad">
-                    <input type="text" id="nombre" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" id="email" placeholder="Email" class="input-mitad">
-                </div>
-                <div class="fila">
-                    <input type="text" id="tema" placeholder="Tema..." class="input-full">
-                </div>
-                <div class="fila">
-                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="input-full"></textarea>
-                </div>
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>Todos los derechos reservados --  Orfheres 2023</p>
+        <p>© 2026 Alfonso Contreras · Orfheres. Construido con HTML, CSS y JavaScript.</p>
         <div class="redes">
-            <a href="https://github.com/AlfonsoContreras05"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/alfonso-contreras-bb7521196/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-discord"></i></a>
-        </div>  
+            <a href="https://github.com/AlfonsoContreras05" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alfonso-contreras-bb7521196/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </footer>
+
     <script src="js/App.js"></script>
 </body>
 </html>
