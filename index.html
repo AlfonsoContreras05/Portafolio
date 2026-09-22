@@ -24,6 +24,7 @@
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#habilidades">Stack</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#caso-estudio">Caso de estudio</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -315,6 +316,56 @@
                         <a href="https://mordidas.netlify.app/" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
                     </div>
                 </article>
+            </div>
+        </section>
+
+
+        <section id="formacion" class="seccion seccion-observable">
+            <div class="encabezado-seccion">
+                <p class="titulo-seccion">Formación aplicada</p>
+                <h2>Una API que evolucionó módulo a módulo</h2>
+                <p>Estos tres repositorios muestran la progresión del proyecto integrador Full Stack JavaScript desde un servidor Express hasta una API REST con persistencia, autenticación y carga segura de archivos.</p>
+            </div>
+            <div class="grid-servicios">
+                <article class="card-servicio">
+                    <span class="icono"><i class="fa-brands fa-node-js"></i></span>
+                    <h3>Módulo 6 · Base backend</h3>
+                    <p>Servidor Node.js + Express, arquitectura modular, rutas, contenido estático, middlewares, manejo de errores y persistencia básica de logs con archivos planos.</p>
+                    <ul><li>Node.js + Express</li><li>Routes, controllers y services</li><li>Middleware + File System</li></ul>
+                    <a href="https://github.com/AlfonsoContreras05/tp-integrador-node-express-modulo6" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
+                </article>
+                <article class="card-servicio">
+                    <span class="icono"><i class="fa-solid fa-database"></i></span>
+                    <h3>Módulo 7 · Persistencia SQL</h3>
+                    <p>El backend incorpora PostgreSQL y Sequelize para CRUD, filtros, relaciones usuario-pedidos, SQL manual y transacciones con rollback.</p>
+                    <ul><li>PostgreSQL + Sequelize</li><li>CRUD y relaciones</li><li>Transacciones y rollback</li></ul>
+                    <a href="https://github.com/AlfonsoContreras05/PModulo_7" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
+                </article>
+                <article class="card-servicio">
+                    <span class="icono"><i class="fa-solid fa-shield-halved"></i></span>
+                    <h3>Módulo 8 · API REST segura</h3>
+                    <p>La solución suma login, JWT, bcrypt y carga controlada de archivos, manteniendo separación de responsabilidades y respuestas HTTP consistentes.</p>
+                    <ul><li>JWT + bcrypt</li><li>Upload JPG/PNG/WEBP/PDF</li><li>API REST + PostgreSQL</li></ul>
+                    <a href="https://github.com/AlfonsoContreras05/PModulo8" target="_blank" rel="noopener noreferrer">Ver repositorio →</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="caso-estudio" class="experiencia seccion seccion-observable">
+            <div class="encabezado-seccion">
+                <p class="titulo-seccion">Caso de estudio · Módulo 8</p>
+                <h2>De un servidor Express a una API REST con autenticación</h2>
+                <p>Elegí esta etapa porque concentra la evolución del proyecto: estructura backend, persistencia relacional, seguridad y manejo de archivos en una misma solución.</p>
+            </div>
+            <div class="timeline">
+                <article><span>01</span><div><h3>Desafío principal</h3><p>Evolucionar el backend sin perder su arquitectura modular, protegiendo operaciones sensibles y manteniendo una interfaz HTTP consistente.</p></div></article>
+                <article><span>02</span><div><h3>Solución propuesta</h3><p>Separé rutas, controladores, servicios, modelos y middlewares; integré PostgreSQL mediante Sequelize y protegí PUT, DELETE y upload mediante tokens JWT.</p></div></article>
+                <article><span>03</span><div><h3>Herramientas técnicas</h3><p>Node.js, Express, PostgreSQL, Sequelize, JWT, bcrypt, variables de entorno y pruebas manuales de endpoints.</p></div></article>
+                <article><span>04</span><div><h3>Resultado verificable</h3><p>La API expone 9 operaciones documentadas entre estado, CRUD, consulta SQL, transacción, login y upload. El upload limita archivos a 5 MB y acepta JPG, JPEG, PNG, WEBP y PDF.</p></div></article>
+                <article><span>05</span><div><h3>Aprendizajes y habilidades</h3><p>Diseño de APIs REST, códigos HTTP, autenticación y autorización, ORM, SQL, transacciones, seguridad de credenciales, middlewares y organización mantenible del backend.</p></div></article>
+            </div>
+            <div class="hero-acciones">
+                <a class="btn btn-primario" href="https://github.com/AlfonsoContreras05/PModulo8" target="_blank" rel="noopener noreferrer">Revisar código del caso</a>
             </div>
         </section>
 
